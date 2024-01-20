@@ -35,7 +35,7 @@ def get_all_roles(request):
         return JsonResponse({'error': 'GET request required.'}, status=400)
     
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+# @permission_classes([IsAuthenticated])
 def get_employees_by_department(request, dept_id):
     if request.method == 'GET':
         employees = employe.objects.filter(dept_id=dept_id).values()

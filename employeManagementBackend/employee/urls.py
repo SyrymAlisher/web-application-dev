@@ -7,7 +7,7 @@ urlpatterns = [
     path('roles/', views.get_all_roles, name='get_all_roles'),
     path('employees/department/<int:dept_id>/', views.get_employees_by_department, name='get_employees_by_department'),
 
-    path('signup/',views.signup, name='signup'),
+    path('registration/',views.signup, name='signup'),
     path('login/',views.login_view, name='login'),
     path('logout/',views.logout_view, name='logout'),
     path('adddepartment/',views.adddepartment,name='adddepartment'),
